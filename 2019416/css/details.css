@@ -1,0 +1,20 @@
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border:none;
+    border-bottom: 3px solid #2196F3;
+    /* border-bottom-color: transparent; */
+}
+.nav-tabs>li>a:hover {
+    /* border-bottom: 3px solid #2196F3; */
+    border-color: #fff
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    /* border-bottom: 3px solid #2196F3; */
+    text-decoration: none;
+    background-color: #fff;
+}
+.details_table{
+    margin-top: 20px;
+}

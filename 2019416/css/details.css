@@ -57,6 +57,25 @@ ul li{
     margin: 0px;
     padding: 0px;
 }
+.abnormal_list ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.abnormal_list ul li p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #4f4f4f;
+}
+.abnormal_list ul li b{
+    font-size: 20px;
+    color: #4f4f4f;
+}
 .mainboard_list ul li{
     float: left;
     width: 20%;

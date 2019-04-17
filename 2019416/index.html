@@ -6,36 +6,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+
 </head>
 <style>
 </style>
 
 <body>
     <div class="container">
-        <!-- <div>
-        <div class="control-group">
-            <label class="control-label">日期选择</label>
-            <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-                <input size="16" type="text" value="" readonly>
-                <span class="add-on"><i class="icon-remove"></i></span>
-                <span class="add-on"><i class="icon-th"></i></span>
+        <div class="dateStyle">
+            
+            <div class="control-group">
+                <label class="control-label">日期范围</label>
+                <input size="16" id="startCheckTime" type="text" value=""  placeholder="请选择开始时间" readonly class="form_datetime"> -
+                <input size="16" id="endCheckTime" type="text" value="" placeholder="请选择结束时间" readonly class="form_datetime">
             </div>
-            <input type="hidden" id="dtp_input1" value="" /><br/>
-        </div>
-       </div> -->
-        <div class="selectStyle">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <select class="form-controls">
-                        <option>设备号</option>
-                        <option>项目名</option>
-                    </select>
+            <div class="selectStyle">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <select class="form-controls">
+                            <option>设备号</option>
+                            <option>项目名</option>
+                        </select>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <img onclick="search" src="./img/sousuo.png" alt="" class="search">
                 </div>
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                <img onclick="search" src="./img/sousuo.png" alt="" class="search">
             </div>
         </div>
+
 
         <div>
             <table class="table table-hover">
@@ -181,11 +179,39 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="./jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="../js/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="./js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="./js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="./js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
     <script type="text/javascript">
+      $('#startCheckTime,#endCheckTime').datetimepicker({
+        language: 'zh-CN',
+        weekStart: 0, //一周从哪一天开始
+    	        pickDate: true,                
+                pickTime: true,                 
+                useMinutes: true,               
+                useSeconds: true,              
+                useCurrent: true,              
+                minuteStepping: 1,              
+                pick12HourFormat: false,
+                autoclose:true,//加上这个参数
+        
+         });
 
-
+        $(".form_datetime").datetimepicker({ format: 'yyyy-mm-dd hh:ii' });
+        $('.form_datetime').datetimepicker({
+            //language:  'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1,
+            
+        }
+    );
+        
     </script>
 
 </body>

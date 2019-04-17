@@ -91,3 +91,6 @@
     margin-top: 3px;
     height: 16px;
 }
+.table-hover tbody tr:hover {
+    background-color: #e7ecf7 !important;
+}

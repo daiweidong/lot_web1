@@ -8,7 +8,29 @@
     border-bottom: 3px solid #2196F3;
     /* border-bottom-color: transparent; */
 }
+.navs{
+    float: right;
+    margin-top: -69px;
+    margin-right: 34px;
+}
+.navs .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #fff !important;
+}
+.tabsNav{
+ background: white;
+ -webkit-box-shadow: 0 0 10px #d8d8d8;
+ height: 51px;
+ margin-bottom: 14px;
 
+}
+.breadcrumb{
+    /* -webkit-box-shadow: 0 0 10px #d8d8d8; */
+    background: white !important;
+    border-radius: 0px;
+    padding: 15px 15px;
+}
 .nav-tabs>li>a:hover {
     /* border-bottom: 3px solid #2196F3; */
     border-color: #fff

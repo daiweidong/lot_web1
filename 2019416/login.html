@@ -1,0 +1,155 @@
+<head>
+    <title>登录</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .login_bg {
+            background: url("./img/login.png");
+            height: 100%;
+            background-size: 100% 100%;
+        }
+
+        .con {
+            width: 700px;
+            margin: 0 auto;
+            background: white;
+            height: 460px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logincon {
+            padding-top: 10%;
+        }
+
+        .container img {}
+
+        .login_from {
+            padding-left: 8%;
+            width: 100%;
+            padding-right: 5%;
+        }
+
+        .login_Welcome {
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .login_title {
+            font-size: 14px;
+            color: #2b2b2b;
+        }
+
+        .login_title span {
+            color: #577abc;
+        }
+
+        .login_bg label {
+            font-size: 13px;
+            color: #2b2b2b;
+        }
+
+        .login_bg .btn {
+            background: #577abc !important;
+            color: #ffffff;
+            font-size: 14px;
+            width: 100% !important;
+            height: 38px;
+            line-height: 22px;
+        }
+
+        .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+            background-color: #57bc78;
+            border-radius: 25px;
+        }
+
+        .custom-checkbox .custom-control-label::before {
+            border-radius: 15px !important;
+        }
+
+        .rememberpassword {
+            display: flex;
+            align-items: center;
+            padding-bottom: 35px;
+        }
+
+        .login_bg .form-group {
+            position: relative;
+        }
+
+        .login_bg .form-group img {
+            position: absolute;
+            height: 16px;
+            top: 39px;
+            z-index: 999;
+            left: 12px;
+        }
+
+        .login_bg .form-control {
+            padding-left: 35px;
+            font-size: 13px;
+            height: 38px;
+            line-height: 38px;
+        }
+.login_img{
+    position: relative;
+}
+        .title {
+            position: absolute;
+            top: 68px;
+            z-index: 999;
+            left: 50%;
+            margin-left: -98px;
+            text-align: center;
+            height: 16px;
+        }
+
+        .loginLeft {
+            position: relative;
+            height: 460px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login_bg">
+        <div class="container logincon">
+            <div class="con">
+                <div class="login_img">
+                    <img class="title" src="./img/title.png" alt="">
+                    <img class="loginLeft" src="./img/loginImg.png" alt="">
+                </div>
+                <div class="login_from">
+                    <p class="login_Welcome">HELLO!</p>
+                    <p class="login_title">欢迎您
+                        <span>登录</span> BMS数据平台</p>
+
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="name">账号</label>
+                            <img src="./img/zhanghao.png" alt="">
+                            <input type="text" class="form-control" id="name" placeholder="请输入账号">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">密码</label>
+                            <img src="./img/mima.png" alt="">
+                            <input type="text" class="form-control" id="name" placeholder="请输入密码">
+                        </div>
+                        <div class="custom-control custom-checkbox rememberpassword">
+                            <input type="checkbox" checked="" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">记住密码</label>
+                        </div>
+                        <div class="from_footer">
+                            <button type="submit" class="btn btn-default">登录</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,68 @@
+.recorded {
+    float: right;
+    background: #577abc;
+    color: white;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 15px;
+    width: 152px;
+    border-radius: 32px;
+    text-align: center;
+    margin-left: 21px;
+}
+
+.recorded img {
+    height: 13px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.selectStyle {
+    width: 360px;
+    display: flex;
+    float: right;
+    margin-top: 20px;
+}
+
+.edit_btn {
+    padding-right: 5px;
+    height: 15px;
+}
+
+.del_btn {
+    height: 15px;
+}
+
+.edit_btn,
+.del_btn:hover {
+    cursor: pointer;
+}
+
+.state {
+
+    display: flex;
+    align-items: center;
+}
+
+.state select {
+    width: 220px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 32px;
+    width: 88px;
+    margin-top: 5px;
+}
+
+.labertitle {
+    background: #577abc;
+    line-height: 32px;
+    color: white;
+    padding: 0px 10px;
+    border-radius: 50px 0 0 50px;
+}
+.modal-open .modal{
+    overflow-x: hidden;
+    overflow-y: hidden !important;
+    height: 200px;
+    background: #333333 !important;
+}

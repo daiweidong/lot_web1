@@ -1,0 +1,35 @@
+.Bmsadd {
+    width: 40%;
+
+}
+
+.Bmsadd .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Bmsadd label {
+    width: 100px;
+}
+
+.Bmsadd p {
+    border-bottom: 1px solid #dad3d3;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+.from_footer{
+    text-align: right;
+    margin-top: 35px;
+}
+.from_footer button{
+    border-radius: 32px;
+     padding: 3px 15px;
+     padding-left: 15px;
+}
+.from_footer .up{
+    background: #577abc;
+    color: white;
+    margin-right: 10px;
+}
